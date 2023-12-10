@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de médicos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="contenedor">
+      <!-- Header -->
+      <header class="encabezado">
+        <h1 class="titulo_principal">
+          <a href="../index.html">Centro Médico Back-End</a>
+        </h1>
+        <nav>
+          <ul class="nav-bar">
+            <li>
+              <a href="../registro-medicos/registro-medicos.html"
+                >Registro de médicos</a
+              >
+            </li>
+            <li>
+              <a href="../registro-pacientes/registro-pacientes.html"
+                >Registro de pacientes</a
+              >
+            </li>
+            <li>
+              <a href="../listado-medicos-registrados/listado-medicos.html"
+                >Médicos registrados</a
+              >
+            </li>
+            <li>
+              <a href="../listado-pacientes-registrados/listado-pacientes.html"
+                >Pacientes registrados</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Formulario de registro de médicos -->
+        <form action="" class="formMedicos" id="registro_medicos_form">
+          <h2 class="titulo_seccion">Registro de médicos</h2>
+          <!-- Grupo: Nombres -->
+          <label for="nombres">Nombre(s): *</label> <br />
+          <input
+            type="text"
+            name="nombres"
+            id="nombres"
+            placeholder="Escriba su nombre"
+            required
+          />
+          <br />
+          <!-- Grupo: Apellidos -->
+          <label for="apellidos">Apellidos: *</label> <br />
+          <input
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Escriba sus apellidos"
+            required
+          />
+          <br />
+          <!-- Grupo: Número de cédula -->
+          <label for="identificacion">Número de cédula: * </label> <br />
+          <input
+            type="number"
+            name="identificacion"
+            id="identificacion"
+            placeholder="Escriba su número de cédula"
+            required
+          />
+          <br />
+          <!-- Grupo: Número de consultorio -->
+          <label for="consultorio">Númedo de consultorio: *</label> <br />
+          <input
+            type="number"
+            name="consultorio"
+            id="consultorio"
+            placeholder="Escriba su número de consultorio"
+            required
+          />
+          <br />
+          <!-- Grupo: Número de teléfono -->
+          <label for="telefono">Teléfono: *</label> <br />
+          <input
+            type="number"
+            name="telefono"
+            id="telefono"
+            placeholder="Escriba su número de teléfono"
+            required
+          />
+          <br />
+          <!-- Grupo: Correo electrónico -->
+          <label for="email">Correo electrónico: *</label> <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Escriba su correo electrónico"
+            required
+          />
+          <br />
+          <!-- Grupo: Especialidad -->
+          <label for="especialidad">Especialidad: *</label> <br />
+          <select name="especialidad" id="especialidad" required>
+            <option value="" selected disabled>
+              Seleccione su especialidad
+            </option>
+            <option value="Medicina general">Medicina general</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina interna">Medicina interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitacion fisica">Rehabilitación física</option>
+            <option value="Psicología">Piscología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+          </select>
+          <br />
+          <!-- Envío formulario -->
+          <input type="submit" class="boton_form" />
+        </form>
+      <!-- Footer -->
+      <footer class="pie_pagina">
+        <p>
+          2023. Hecho por
+          <a href="https://www.instagram.com/clementebatista70/" target="_blank"
+            >Francisco</a
+          >
+        </p>
+      </footer>
+    </main>
+    <script src="../app.js"></script>
+  </body>
+</html>

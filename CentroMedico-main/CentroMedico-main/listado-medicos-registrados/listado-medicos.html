@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listado de médicos registrados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <main class="contenedor">
+      <!-- Header -->
+      <header class="encabezado">
+        <h1 class="titulo_principal">
+          <a href="../index.html">Centro Médico Back-End</a>
+        </h1>
+        <nav>
+          <ul class="nav-bar">
+            <li>
+              <a href="../registro-medicos/registro-medicos.html"
+                >Registro de médicos</a
+              >
+            </li>
+            <li>
+              <a href="../registro-pacientes/registro-pacientes.html"
+                >Registro de pacientes</a
+              >
+            </li>
+            <li>
+              <a href="../listado-medicos-registrados/listado-medicos.html"
+                >Listado de médicos</a
+              >
+            </li>
+            <li>
+              <a href="../listado-pacientes-registrados/listado-pacientes.html"
+                >Listado de pacientes</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Tabla de los médicos registrados -->
+      <div class="div-tabla">
+        <table class="tabla">
+          <caption class="titulo_tabla">
+            Listado de médicos registrados
+          </caption>
+          <!-- Nombres Data -->
+          <thead class="tlabel">
+            <tr>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Número de cédula</th>
+              <th>Número de consultorio</th>
+              <th>Teléfono</th>
+              <th>Correo</th>
+              <th>Especialidad</th>
+              <th>Paciente</th>
+            </tr>
+          </thead>
+          <!-- Data -->
+          <tbody class="tdata" id="data_tabla_medicos">
+            <tr>
+              <td data-cell="nombres">José Camilo</td>
+              <td data-cell="apellidos">Pinzón Rueda</td>
+              <td data-cell="cédula">1234567890</td>
+              <td data-cell="consultorio">302</td>
+              <td data-cell="teléfono">310XXXXXXX</td>
+              <td data-cell="correo">joserueda@email.com</td>
+              <td data-cell="especialidad">Cardiología</td>
+              <td data-cell="paciente">Francisco Rodríguez Peralta</td>
+            </tr>
+            <tr>
+              <td data-cell="nombres">Carlos Alejandro</td>
+              <td data-cell="apellidos">Gómez Trujillo</td>
+              <td data-cell="cédula">2345678901</td>
+              <td data-cell="consultorio">107</td>
+              <td data-cell="teléfono">312XXXXXXX</td>
+              <td data-cell="correo">carlosgomez@email.com</td>
+              <td data-cell="especialidad">Medicina Interna</td>
+              <td data-cell="paciente">Luz Martina Rodríguez Peralta</td>
+            </tr>
+            <tr>
+              <td data-cell="nombres">Antonio</td>
+              <td data-cell="apellidos">Macías Fernandez</td>
+              <td data-cell="cédula">3456789012</td>
+              <td data-cell="consultorio">201</td>
+              <td data-cell="teléfono">314XXXXXXX</td>
+              <td data-cell="correo">joserueda@email.com</td>
+              <td data-cell="especialidad">Dermatología</td>
+              <td data-cell="paciente">Andrés Esteban Sánchez Rincón</td>
+            </tr>
+            <tr>
+              <td data-cell="nombres">Diego</td>
+              <td data-cell="apellidos">Alvarado Mora</td>
+              <td data-cell="cédula">4567890123</td>
+              <td data-cell="consultorio">202</td>
+              <td data-cell="teléfono">315XXXXXXX</td>
+              <td data-cell="correo">joserueda@email.com</td>
+              <td data-cell="especialidad">Dermatología</td>
+              <td data-cell="paciente">María Fernanda Mora Perez</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Footer -->
+      <footer class="pie_pagina">
+        <p>2023. Hecho por <a href="https://www.instagram.com/clementebatista70/" target="_blank">Francisco</a></p>
+      </footer>
+    </main>
+    <script src="../app.js"></script>
+  </body>
+</html>

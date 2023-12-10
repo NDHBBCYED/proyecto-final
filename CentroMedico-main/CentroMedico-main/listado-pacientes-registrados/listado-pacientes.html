@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listado de pacientes registrados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <main class="contenedor">
+      <!-- Header -->
+      <header class="encabezado">
+        <h1 class="titulo_principal">
+          <a href="../index.html">Centro Médico Back-End</a>
+        </h1>
+        <nav>
+          <ul class="nav-bar">
+            <li>
+              <a href="../registro-medicos/registro-medicos.html"
+                >Registro de médicos</a
+              >
+            </li>
+            <li>
+              <a href="../registro-pacientes/registro-pacientes.html"
+                >Registro de pacientes</a
+              >
+            </li>
+            <li>
+              <a href="../listado-medicos-registrados/listado-medicos.html"
+                >Listado de médicos registrados</a
+              >
+            </li>
+            <li>
+              <a href="../listado-pacientes-registrados/listado-pacientes.html"
+                >Listado de pacientes registrados</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Tabla de los pacientes registrados -->
+      <div class="div-tabla">
+        <table class="tabla">
+          <caption class="titulo_tabla">
+            Listado de pacientes registrados
+          </caption>
+          <!-- Nombres Data -->
+          <thead class="tlabel">
+            <tr>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Número de cédula</th>
+              <th>Edad</th>
+              <th>Teléfono</th>
+              <th>Especialidad</th>
+              <th>Médico encargado</th>
+            </tr>
+          </thead>
+          <!-- Data -->
+          <tbody class="tdata" id="data_tabla_pacientes">
+            <tr>
+              <td data-cell="nombres">Francisco</td>
+              <td data-cell="apellidos">Rodríguez Peralta</td>
+              <td data-cell="cédula">0987654321</td>
+              <td data-cell="edad">78</td>
+              <td data-cell="teléfono">322XXXXXXX</td>
+              <td data-cell="especialidad">Cardiología</td>
+              <td data-cell="médico encargado">José Camilo Pinzón Rueda</td>
+            </tr>
+            <tr>
+              <td data-cell="nombres">Luz Martina</td>
+              <td data-cell="apellidos">Rodríguez Peralta</td>
+              <td data-cell="cédula">9876543210</td>
+              <td data-cell="edad">76</td>
+              <td data-cell="teléfono">310XXXXXXX</td>
+              <td data-cell="especialidad">Medicina Interna</td>
+              <td data-cell="médico encargado">
+                Carlos Alejandro Gómez Trujillo
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="nombres">Andrés Esteban</td>
+              <td data-cell="apellidos">Sánchez Rincón</td>
+              <td data-cell="cédula">8765432109</td>
+              <td data-cell="edad">24</td>
+              <td data-cell="teléfono">315XXXXXXX</td>
+              <td data-cell="especialidad">Dermatología</td>
+              <td data-cell="médico encargado">Antonio Macías Fernandez</td>
+            </tr>
+            <tr>
+              <td data-cell="nombres">María Fernanda</td>
+              <td data-cell="apellidos">Mora Perez</td>
+              <td data-cell="cédula">7654321098</td>
+              <td data-cell="edad">32</td>
+              <td data-cell="teléfono">322XXXXXXX</td>
+              <td data-cell="especialidad">Dermatología</td>
+              <td data-cell="médico encargado">Diego Alvarado Mora</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Footer -->
+      <footer class="pie_pagina">
+        <p>2023. Hecho por <a href="https://www.instagram.com/clementebatista70/" target="_blank">Francisco</a></p>
+      </footer>
+    </main>
+    <script src="../app.js"></script>
+  </body>
+</html>

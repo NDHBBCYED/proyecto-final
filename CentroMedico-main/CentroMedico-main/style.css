@@ -1,0 +1,141 @@
+/* Global */
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dcdcdc;
+}
+
+.contenedor {
+  background-color: #dcdcdc;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Header */
+.encabezado {
+  background-color: cornflowerblue;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.home-icon{
+  width: 3rem;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(105deg) brightness(105%) contrast(101%);;
+}
+
+
+/* Listado */
+.contenido {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listado {
+  list-style: none;
+  min-width: 100%;
+}
+
+.item-lista {
+  position: relative;
+  max-width: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2.2rem auto;
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.enlace {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  color: #464646;
+  text-decoration: none;
+  font-weight:500;
+}
+
+.icono{
+  width: 2rem;
+  filter: invert(25%) sepia(3%) saturate(81%) hue-rotate(328deg) brightness(94%) contrast(87%);
+}
+
+
+/* Pie de página */
+.pie_pagina {
+  background-color: cornflowerblue;
+  grid-area: footer;
+  color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px;
+  margin-top: auto;
+}
+
+.pie_pagina a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Mediaquery */
+@media (max-width: 600px) {
+
+  /* Header */
+  .encabezado {
+    background-color: cornflowerblue;
+    display: flex;
+    text-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px;
+    gap: 0.2rem;
+    font-size: 10px;
+    color: #ffffff;
+  }
+
+  .home-icon{
+    width: 2rem;
+  }
+
+  /* Listado */
+  .listado{
+    min-width: 92%;
+  }
+
+  .iconos_li{
+    display: none;
+  }
+
+  .enlace {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    color: rgb(70 70 70);
+    text-decoration: none;
+  }
+}
